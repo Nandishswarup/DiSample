@@ -14,7 +14,7 @@
         android:theme="@style/Theme.DiDemo"
         tools:targetApi="31">
         <activity
-            android:name=".sampleProjectDi.SampleProjectActivity"
+            android:name=".sampleProjectAdvancedDi.SampleProjectAdvancedActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
