@@ -14,8 +14,8 @@
         android:theme="@style/Theme.DiDemo"
         tools:targetApi="31">
         <activity
-            android:name=".demo.SecondActivity2"
-            android:exported="true" >
+            android:name=".sampleProjectDi.SampleProjectActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,11 +23,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".demo.SecondActivity2"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.DiDemo">
-
-        </activity>
+            android:theme="@style/Theme.DiDemo"></activity>
     </application>
 
 </manifest>
