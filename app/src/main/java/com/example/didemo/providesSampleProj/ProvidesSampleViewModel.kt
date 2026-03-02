@@ -1,4 +1,4 @@
-package com.example.didemo.sampleProjectAdvancedDi
+package com.example.didemo.providesSampleProj
 
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
@@ -7,12 +7,12 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class SampleScreenViewModel @Inject constructor(val analyticsTrackerInterface: AnalyticsTrackerInterface) :
+class ProvidesSampleViewModel @Inject constructor(val iLogger: InterfaceLogger) :
     ViewModel() {
         val title = mutableStateOf<String>("this is sample screen VM")
 
 
-    fun trackEvent(event: String) {
-        analyticsTrackerInterface.trackEvent(event)
+    fun logMessage(event: String) {
+        iLogger.logMessage(event)
     }
 }
